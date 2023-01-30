@@ -1,0 +1,11 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+    text-align: center;
+}
+
+#demoCanvas {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
