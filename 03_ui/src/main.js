@@ -3,7 +3,7 @@ export default function main(stage) {
     return stage;
 }
 
-function customCircle(size, position) {
+function customCircle(size, position, stage) {
     let circle = new createjs.Shape();
     circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, size);
     circle.x = position.x;
@@ -35,7 +35,7 @@ function customCircle(size, position) {
 
 function createCircle(e, stage) {
     let position = { x: stage.mouseX, y: stage.mouseY };
-    let circle = customCircle(5, position)
+    let circle = customCircle(5, position, stage)
     stage.addChild(circle);
 }
 
