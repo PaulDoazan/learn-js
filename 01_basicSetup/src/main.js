@@ -4,8 +4,8 @@ export default function main(stage) {
     circle.x = 100;
     circle.y = 100;
 
-    circle.on('tick', (e) => {
-        e.currentTarget.x += 1;
+    circle.addEventListener('click', (e) => {
+        circle.x += 5;
     })
     stage.addChild(circle);
 

@@ -6,6 +6,7 @@ export default function init() {
 
     main(stage);
 
+    createjs.Ticker.timingMode = createjs.Ticker.RAF;
     createjs.Ticker.addEventListener("tick", () => {
         stage.update();
     });
