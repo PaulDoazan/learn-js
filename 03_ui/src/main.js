@@ -3,9 +3,11 @@ export default function main(stage) {
 
     let externalBtn = document.querySelector('.external-btn');
     let form = document.querySelector('form');
+    let inp = document.querySelector('input');
 
     form.addEventListener('click', (e) => {
         e.preventDefault();
+        console.log(inp.value);
     })
 
     externalBtn.addEventListener('click', (e) => {
