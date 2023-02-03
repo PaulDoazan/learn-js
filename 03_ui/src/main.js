@@ -1,5 +1,20 @@
 export default function main(stage) {
     stage = createBackground(stage);
+
+    let externalBtn = document.querySelector('.external-btn');
+    let form = document.querySelector('form');
+
+    form.addEventListener('click', (e) => {
+        e.preventDefault();
+    })
+
+    externalBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+    })
+
+    document.addEventListener('keydown', (e) => {
+        // console.log(e.key)
+    })
     return stage;
 }
 
