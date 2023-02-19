@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scroll infini</title>
+    <title>Pixelized images</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,24 +11,21 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
   </head>
   <body>
     <h1>
-      Scroll Infini
+      Pixelized images
     </h1>
     <div class="container">
-      <button class="scroll-to-top">
-        <div>&uarr;</div>
-      </button>
       <form autocomplete="off">
-        <label for="search">Votre recherche</label>
+        <label for="search">Search</label>
         <input type="password" id="search">
       </form>
-      <div class="images-list"></div>
+      <div class="canvas-container"></div>
       <p class="error-msg"></p>
-      <div class="infinite-marker"></div>
     </div>
 
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>

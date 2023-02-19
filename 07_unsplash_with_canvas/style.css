@@ -1,0 +1,61 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #f1f1f1;
+  font-family: Open sans, Helvetica, sans-serif;
+  padding: clamp(20px, 5vw, 50px) 20px 10px;
+}
+
+h1 {
+  font-family: Raleway, sans-serif;
+  font-size: 45px;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input {
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 5px 6px rgba(0,0,0,0.3);
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+}
+
+.new-canvas {
+  position: fixed;
+  top: -9999px;
+}
+
+.error-msg {
+  font-size: 18px;
+  margin: 10px 0;
+}
