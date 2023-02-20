@@ -19,6 +19,7 @@ export default function cards(st) {
     let cardWidth = (bmp.width + margin) / cardsNumber;
     let cardHeight = bmp.height / cardsNumber
 
+    console.log('here');
     // double tableau
     for (let i = 0; i < cardsNumber; i++) {
         for (let j = 0; j < cardsNumber; j++) {

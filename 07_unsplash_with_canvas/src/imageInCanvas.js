@@ -58,7 +58,9 @@ export function setImageInCanvas(img, size) {
             if (count === 1) {
                 /**  draw pixelized img */
                 drawImage()
-                cards(stage);
+                createjs.Ticker.on('tick', () => {
+                    cards(stage);
+                }, null, true)
             } else {
                 createjs.Ticker.removeEventListener('tick', tickerHandler)
             }
@@ -69,26 +71,36 @@ export function setImageInCanvas(img, size) {
 export function drawImage() {
     let pixelSize = pixelSlider.value
     pixelsContainer = new createjs.Container();
-    for (let i = 0; i < pixelSize; i++) {
-        for (let j = 0; j < pixelSize; j++) {
-            let imgData = ctxTool.getImageData(i * (bmpWidth / pixelSize), j * (bmpHeight / pixelSize), bmpWidth / pixelSize, bmpHeight / pixelSize);
+    stageTool.addChild(stage.bmp);
 
-            imgData.data[0]
-            imgData.data[1]
-            imgData.data[2]
-            imgData.data[3]
+    createjs.Ticker.on('tick', () => {
+        for (let i = 0; i < pixelSize; i++) {
+            for (let j = 0; j < pixelSize; j++) {
+                let imgData = ctxTool.getImageData(i * (bmpWidth / pixelSize), j * (bmpHeight / pixelSize), bmpWidth / pixelSize, bmpHeight / pixelSize);
 
-            let gr = new createjs.Graphics()
-            let sh = new createjs.Shape(gr)
+                imgData.data[0]
+                imgData.data[1]
+                imgData.data[2]
+                imgData.data[3]
 
-            gr.beginFill(`rgba(${imgData.data[0]}, ${imgData.data[1]}, ${imgData.data[2]}, 1)`)
-            gr.drawRect(i * (bmpWidth / pixelSize), j * (bmpHeight / pixelSize), bmpWidth / pixelSize, bmpHeight / pixelSize)
+                let gr = new createjs.Graphics()
+                let sh = new createjs.Shape(gr)
 
-            pixelsContainer.addChild(sh);
+                gr.beginFill(`rgba(${imgData.data[0]}, ${imgData.data[1]}, ${imgData.data[2]}, 1)`)
+                gr.drawRect(i * (bmpWidth / pixelSize), j * (bmpHeight / pixelSize), bmpWidth / pixelSize, bmpHeight / pixelSize)
+
+                pixelsContainer.addChild(sh);
+            }
         }
-    }
-    pixelsContainer.x = stage.marginBmp > 0 ? stage.marginBmp / 2 : 0
-    stage.removeChild(stage.pixelsContainer);
-    stage.addChildAt(pixelsContainer, 0);
-    stage.pixelsContainer = pixelsContainer
+        pixelsContainer.x = stage.marginBmp > 0 ? stage.marginBmp / 2 : 0
+        stage.removeChild(stage.pixelsContainer);
+        stage.removeChild(stage.bmp);
+
+        if (Number(pixelSlider.value) <= 30) {
+            stage.addChildAt(stage.bmp, 0);
+        } else {
+            stage.addChildAt(pixelsContainer, 0);
+            stage.pixelsContainer = pixelsContainer
+        }
+    }, null, true)
 }
