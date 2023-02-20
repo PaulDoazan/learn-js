@@ -18,7 +18,6 @@ export function setImageInCanvas(img, size) {
     stage = new createjs.Stage(mainCanvas);
 
     startLoad(img);
-    cards(stage, size);
 
     createjs.Ticker.timingMode = createjs.Ticker.RAF;
     stage.mainTickerHandler = createjs.Ticker.addEventListener("tick", () => {
@@ -39,12 +38,18 @@ export function setImageInCanvas(img, size) {
         bmpWidth = bmpHeight * ratio;
         let margin = bmpHeight - bmpWidth;
 
+        stage.marginBmp = margin;
 
         let bmp = new createjs.Bitmap(img).set({
-            scaleX: bmpWidth / img.width, scaleY: bmpHeight / img.height,
-            x: margin / 2,
+            scaleX: bmpWidth / img.width,
+            scaleY: bmpHeight / img.height,
+            x: ratio > 1 ? margin / 2 : 0,
+            width: bmpWidth,
+            height: bmpHeight,
+            margin: margin
         });
 
+        stage.bmp = bmp;
         stageTool.addChild(bmp);
 
         let count = 0;
@@ -53,6 +58,7 @@ export function setImageInCanvas(img, size) {
             if (count === 1) {
                 /**  draw pixelized img */
                 drawImage()
+                cards(stage);
             } else {
                 createjs.Ticker.removeEventListener('tick', tickerHandler)
             }
@@ -60,8 +66,8 @@ export function setImageInCanvas(img, size) {
     }
 }
 
-export function drawImage(pixelSize = 40) {
-    pixelSize = pixelSlider.value
+export function drawImage() {
+    let pixelSize = pixelSlider.value
     pixelsContainer = new createjs.Container();
     for (let i = 0; i < pixelSize; i++) {
         for (let j = 0; j < pixelSize; j++) {
@@ -81,6 +87,8 @@ export function drawImage(pixelSize = 40) {
             pixelsContainer.addChild(sh);
         }
     }
-    stage.removeAllChildren();
-    stage.addChild(pixelsContainer);
+    pixelsContainer.x = stage.marginBmp > 0 ? stage.marginBmp / 2 : 0
+    stage.removeChild(stage.pixelsContainer);
+    stage.addChildAt(pixelsContainer, 0);
+    stage.pixelsContainer = pixelsContainer
 }
