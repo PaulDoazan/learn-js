@@ -11,20 +11,45 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/1f65996de1.js" crossorigin="anonymous"></script>
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
   </head>
   <body>
-    <h1>
-      Pixelized images
-    </h1>
     <div class="container">
-      <form autocomplete="off">
-        <label for="search">Search</label>
-        <input type="password" id="search">
-      </form>
-      <div class="canvas-container"></div>
-      <p class="error-msg"></p>
+      <div class="menu">
+        <h1>
+          Pixelized
+        </h1>
+        <div class="tools-container">
+          <form autocomplete="off">
+            <div class="password-container">
+              <input type="password" placeholder="Search..." id="search">
+              <i class="fa-solid fa-eye-slash" id="eye"></i>
+            </div>
+          </form>
+        </div>
+        <div class="slider-container">
+          <div class="tool-slider">
+            <input class="slider pixelSlider" type="range" id="pixels" name="pixels"
+                  min="30" max="100" value="40">
+            <label for="pixels">pixels</label>
+          </div>
+          
+          <div class="tool-slider">
+            <input class="slider cardSlider" type="range" id="cards" name="cards" 
+                  min="0" max="100" value="90" step="10">
+            <label for="cards">cards</label>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="error-msg"></p>
+        <div class="canvas-container">
+        </div>
+      </div>
     </div>
+
+    <canvas class="tool-canvas"></canvas>
 
     <script type="module" src="app.js"></script>
   </body>
