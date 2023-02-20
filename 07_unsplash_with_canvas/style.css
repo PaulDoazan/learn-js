@@ -45,10 +45,10 @@ h1 {
   justify-content: center;
 }
 
-/* .tool-canvas {
+.tool-canvas {
   position: fixed;
   top: -9999px;
-} */
+}
 
 .error-msg {
   font-size: 18px;
