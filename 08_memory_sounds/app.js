@@ -5,7 +5,7 @@ const advice = document.querySelector('.advice');
 const score = document.querySelector('.score');
 
 let cardsPicked = [];
-let shuffleLock = false;
+let cardLock = false;
 let numberOfTries = 0;
 
 window.addEventListener('keydown', handleKeydown)
@@ -18,7 +18,7 @@ function init() {
 }
 
 function flipCard(e) {
-    if (cardsPicked.length === 2) return;
+    if (cardsPicked.length === 2 || cardLock) return;
     saveCard(e.target.children[0], e.target.getAttribute('data-attr'))
     if (cardsPicked.length === 2) result();
 }
@@ -71,17 +71,22 @@ function shuffleCards() {
 function handleKeydown(e) {
     e.preventDefault()
     if (e.keyCode === 32) {
-        innerCards.forEach(card => card.classList.remove("active"))
+        const activeCards = innerCards.filter(card => card.classList.contains('active'));
+        activeCards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.remove("active")
+            }, 100 * index)
+        })
         advice.textContent = `Tentez de gagner avec le moins d'essais possible.`
         score.textContent = `Nombre de coups : 0`
         numberOfTries = 0;
         cards.forEach(card => card.addEventListener("click", flipCard))
 
-        if (shuffleLock) return;
-        shuffleLock = true;
+        if (cardLock) return;
+        cardLock = true;
         setTimeout(() => {
             shuffleCards()
-            shuffleLock = false;
-        }, 600)
+            cardLock = false;
+        }, 600 + activeCards.length * 100)
     }
 }
