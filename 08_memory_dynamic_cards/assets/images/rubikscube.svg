@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg548" height="400pt" width="400pt">
+  <g id="g841" stroke-linejoin="round" stroke="#000" stroke-width="10">
+    <path id="path782" fill-rule="evenodd" fill="#ff0" d="m288.75 237.5l157.5-157.5-213.75-67.5s-183.75 107.5-182.5 107.5 238.75 121.25 238.75 117.5z"/>
+    <path id="path780" fill-rule="evenodd" fill="#0f0" d="m290 487.5l-2.5-248.75-237.5-116.25v230l240 135z"/>
+    <path id="path779" fill-rule="evenodd" fill="#f00" d="m287.5 240c0-1.25 158.75-158.75 158.75-158.75v240s-153.75 166.25-155 166.25-3.75-245-3.75-247.5z"/>
+    <path id="path554" transform="matrix(1 0 0 1.1195 -36.461 -46.204)" fill="none" d="m84.792 148.96c0.848 0 239.96 105.14 239.96 105.14l160.26-142.45-216.22-58.505-184 95.815z"/>
+    <path id="path555" transform="matrix(1 0 0 1.1195 -36.461 -46.204)" fill="none" d="m85.64 149.81c0 0.85 1.696 206.04 0.848 205.19l239.96 122.95-3.39-224.69-237.42-103.45z"/>
+    <path id="path557" transform="matrix(1 0 0 1.1195 -36.461 -46.204)" fill="none" d="m326.45 478.8l-2.54-224.7 161.1-142.45-2.54 217.07-156.02 150.08z"/>
+    <path id="path560" transform="matrix(1 0 0 1.1195 19.502 17.444)" fill="none" d="m211.13 456.76a0.42396 0 0 1 0 -0.85 0 0.42396 0 0 1 0 0.85 0h-0.42z"/>
+    <path id="path564" transform="matrix(1 0 0 1.1195 147.54 90.365)" fill="none" d="m211.13 456.76a0.42396 0 0 1 0 -0.85 0 0.42396 0 0 1 0 0.85 0h-0.42z"/>
+    <path id="path570" transform="matrix(1 0 0 1.1195 -66.986 81.038)" fill="none" d="m211.13 456.76a0.42396 0 0 1 0 -0.85 0 0.42396 0 0 1 0 0.85 0h-0.42z"/>
+    <path id="path571" transform="matrix(1 0 0 1.1195 61.05 153.96)" fill="none" d="m211.13 456.76a0.42396 0 0 1 0 -0.85 0 0.42396 0 0 1 0 0.85 0h-0.42z"/>
+    <path id="path762" fill="none" d="m207.74 440.41v-240.57l167.04-142.46"/>
+    <path id="path763" fill="none" d="m120.4 390.62v-233.18l182.31-122.95"/>
+    <path id="path764" fill="none" d="m348.5 423.69c-0.85 0-2.55-242.51-2.55-242.51l-232.33-100.05"/>
+    <path id="path765" fill="none" d="m401.07 371.96s-1.7-243.35-1.7-244.2-221.31-83.094-221.31-83.094"/>
+    <path id="path766" fill="none" d="m50.027 199.84l239.11 126.34 158.56-176.37"/>
+    <path id="path767" fill="none" d="m48.332 271.06c1.695 0 239.96 138.21 239.96 138.21l159.41-178.91"/>
+  </g>
+  <rdf:RDF xmlns="http://web.resource.org/cc/">
+    <Work rdf:about="">
+      <dc:title>Clipart by Nicu Buculei - piggybank</dc:title>
+      <dc:rights>
+        <Agent>
+          <dc:title>Nicu Buculei</dc:title>
+        </Agent>
+      </dc:rights>
+      <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      <license rdf:resource="http://web.resource.org/cc/PublicDomain"/>
+    </Work>
+    <License rdf:about="http://web.resource.org/cc/PublicDomain">
+      <permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+      <permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+      <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+    </License>
+  </rdf:RDF>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Rubik cube</dc:title>
+        <dc:date>2009-03-09T13:29:30</dc:date>
+        <dc:description>A Rubik's cube puzzle game</dc:description>
+        <dc:source>http://openclipart.org/detail/21990/rubik-cube-by-nicubunu</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>nicubunu</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>cartoon</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>game</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>play</rdf:li>
+            <rdf:li>playing</rdf:li>
+            <rdf:li>png</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>puzzle</rdf:li>
+            <rdf:li>svg</rdf:li>
+            <rdf:li>toy</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

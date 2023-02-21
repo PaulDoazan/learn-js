@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg548" height="400pt" width="400pt">
+  <defs id="defs550">
+    <filter id="filter3232">
+      <feGaussianBlur id="feGaussianBlur3234" stdDeviation="1.8045012"/>
+    </filter>
+    <filter id="filter3308" y="-.098525" width="1.2614" x="-.13071" height="1.197">
+      <feGaussianBlur id="feGaussianBlur3310" stdDeviation="4.7896562"/>
+    </filter>
+    <filter id="filter3344" y="-.17763" width="1.0456" x="-.022823" height="1.3553">
+      <feGaussianBlur id="feGaussianBlur3346" stdDeviation="1.9290742"/>
+    </filter>
+    <filter id="filter3452" y="-.10691" width="1.665" x="-.33248" height="1.2138">
+      <feGaussianBlur id="feGaussianBlur3454" stdDeviation="1.6633963"/>
+    </filter>
+    <filter id="filter3504" y="-.42555" width="1.0474" x="-.023725" height="1.8511">
+      <feGaussianBlur id="feGaussianBlur3506" stdDeviation="2.0981111"/>
+    </filter>
+  </defs>
+  <path id="path597" stroke-linejoin="round" d="m59.22 384.21s51.27-264.28 185.62-267.81c152.91 4.41 209.48 252.79 212.13 267.81-60.11 47.73-262.52 90.16-397.75 0z" fill-rule="evenodd" stroke="#000" stroke-width="10" fill="#006cc1"/>
+  <path id="path598" stroke-linejoin="round" d="m164.4 426.64c-10.01-164.4 66.59-304.94 78.67-310.25 16.79 2.66 124.63 205.07 108.72 310.25-45.97 10.6-134.35 15.91-187.39 0z" fill-rule="evenodd" stroke="#000" stroke-width="10" fill="#ffac00"/>
+  <path id="path599" stroke-linejoin="round" d="m6.9354 103.57c-1.7677 19.45 154.81 32.27 211.38 24.32 16.79-7.08 30.94-10.61 48.61-0.89 68.95 15.91 230.7 8.84 227.16-16.79-17.68-22.984-162.63-20.332-231.58-7.07-8.84 5.3-23.86 9.72-44.19-2.65-14.14-9.728-205.35-17.861-211.38 3.08z" fill-rule="evenodd" stroke="#000" stroke-width="10" fill="#ffed00"/>
+  <path id="path600" stroke-linejoin="round" d="m228.04 107.56c-1.77 9.72 25.63 11.49 35.36 3.53 5.3-52.148-30.94-56.567-35.36-3.53z" fill-rule="evenodd" stroke="#000" stroke-width="10" fill="#ac00ff"/>
+  <path id="path601" d="m63.64 380.68c29.168-132.59 97.23-229.81 126.4-241.3-144.96 159.09-32.71 312.01-126.4 241.3z" fill-rule="evenodd" fill-opacity=".5" filter="url(#filter3232)" fill="#fff"/>
+  <path id="path602" d="m243.95 74.852c-7.95 8.839-15.02 36.238-9.72 35.358 20.33 9.72 2.65-18.564 9.72-35.358z" fill-rule="evenodd" fill-opacity=".49804" filter="url(#filter3452)" fill="#fff"/>
+  <path id="path603" filter="url(#filter3308)" fill-rule="evenodd" fill-opacity=".25" d="m361.51 418.68c50.38-40.66 63.64-98.99 60.99-116.67 7.95 13.26 36.24 72.48 23.86 82.2-15.02 9.72-35.35 22.1-84.85 34.47z"/>
+  <path id="path604" filter="url(#filter3504)" fill-rule="evenodd" fill-opacity=".30038" d="m271.35 107.56c-5.3-4.42 178.55-21.217 212.13 1.76-51.26-11.487-152.02-7.07-212.13-1.76z"/>
+  <path id="path605" d="m12.973 100.19c-15.026 7.07 136.41 37.42 201.81 21.51-84.85-4.42-124.91 3.23-201.81-21.51z" fill-rule="evenodd" fill-opacity=".77186" filter="url(#filter3344)" fill="#fff"/>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Propeller hat</dc:title>
+        <dc:date>2009-03-09T13:26:48</dc:date>
+        <dc:description>Propeller cap</dc:description>
+        <dc:source>http://openclipart.org/detail/21986/propeller-hat-by-nicubunu</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>nicubunu</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>cartoon</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>geek</rdf:li>
+            <rdf:li>hat</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>play</rdf:li>
+            <rdf:li>playing</rdf:li>
+            <rdf:li>png</rdf:li>
+            <rdf:li>propeller</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>svg</rdf:li>
+            <rdf:li>toy</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

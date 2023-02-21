@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg834" height="128pt" width="128pt">
+  <defs id="defs836">
+    <linearGradient id="linearGradient844">
+      <stop id="stop845" stop-opacity=".2" offset="0"/>
+      <stop id="stop846" stop-color="#fff" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient847" y2="-.26733" xlink:href="#linearGradient844" y1="1.0693" x2="-.11232" x1=".88406"/>
+    <linearGradient id="linearGradient849" y2="-6.219e-16" xlink:href="#linearGradient844" y1=".26667" x2="-.22101" x1=".93116"/>
+  </defs>
+  <g id="g853" transform="matrix(.80483 -.59350 .59350 .80483 -38.75 69.865)" fill-rule="evenodd">
+    <path id="path838" stroke-linejoin="round" d="m10.308 84.25l117.36 21.5 8.22-41.123-125.58 19.623z" stroke="#000" stroke-width="1.25" fill="#f3fafa"/>
+    <path id="path837" stroke-linejoin="round" d="m5.7542 84.118l131.63-12.254-10.31 34.746-121.32-22.492z" stroke="#000" stroke-width="1.25" fill="#f3fafa"/>
+    <path id="path843" fill="url(#linearGradient847)" d="m45.469 92.153l81.021 15.047 8.25-31.747-89.271 16.7z"/>
+    <path id="path848" fill="url(#linearGradient849)" d="m36.382 78.482l98.958-14.226-1.64 10.309-97.318 3.917z"/>
+    <path id="path839" stroke-linejoin="round" d="m7.7286 84.443l129.19-13.397 19.48 27.476-148.67-14.079z" stroke="#000" stroke-width="1.25" fill="#f3fafa"/>
+    <path id="path840" stroke-linejoin="round" d="m6.4325 84.11l129.39-19.084 0.57-25.645-129.96 44.729z" stroke="#000" stroke-width="1.25" fill="#f3fafa"/>
+    <path id="path841" stroke-linejoin="round" d="m7.4926 83.918l48.004 6.424-2.334-10.97-45.67 4.546z" stroke="#000" stroke-width="1.25" fill="#f3fafa"/>
+    <path id="path842" stroke-linejoin="round" d="m7.0662 84.05l45.774-6.266-2.026-10.526-43.748 16.792z" stroke="#000" stroke-width="1.25" fill="#f3fafa"/>
+    <path id="path850" fill="#fffafa" d="m54.066 80.552l1.776 7.614 71.328 6.6-73.104-14.214z"/>
+    <path id="path851" fill="#fffafa" d="m13.453 82.328l32.236-12.183 1.269 7.614-33.505 4.569z"/>
+    <path id="path852" fill="#fffafa" d="m12.945 84.105l33.506-3.046 1.015 7.107-34.521-4.061z"/>
+  </g>
+  <rdf:RDF xmlns="http://web.resource.org/cc/">
+    <Work rdf:about="">
+      <dc:title>toy paper plane</dc:title>
+      <dc:rights>
+        <Agent>
+          <dc:title>Nicu Buculei</dc:title>
+        </Agent>
+      </dc:rights>
+      <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      <license rdf:resource="http://web.resource.org/cc/PublicDomain"/>
+    </Work>
+    <License rdf:about="http://web.resource.org/cc/PublicDomain">
+      <permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+      <permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+      <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+    </License>
+  </rdf:RDF>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Paper plane</dc:title>
+        <dc:date>2009-03-09T13:24:08</dc:date>
+        <dc:description>A paper airplane</dc:description>
+        <dc:source>http://openclipart.org/detail/21982/paper-plane-by-nicubunu</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>nicubunu</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>airplane</rdf:li>
+            <rdf:li>cartoon</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>plane</rdf:li>
+            <rdf:li>play</rdf:li>
+            <rdf:li>playing</rdf:li>
+            <rdf:li>png</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>svg</rdf:li>
+            <rdf:li>toy</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
