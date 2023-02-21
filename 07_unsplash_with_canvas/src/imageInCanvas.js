@@ -51,7 +51,6 @@ export function setImageInCanvas(img, size) {
 
         stage.bmp = bmp;
         stageTool.addChild(bmp);
-        // stage.bmp.x = 0;
 
         let count = 0;
         let tickerHandler = createjs.Ticker.addEventListener('tick', () => {
