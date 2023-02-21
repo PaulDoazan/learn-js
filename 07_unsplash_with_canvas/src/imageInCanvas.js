@@ -51,6 +51,7 @@ export function setImageInCanvas(img, size) {
 
         stage.bmp = bmp;
         stageTool.addChild(bmp);
+        // stage.bmp.x = 0;
 
         let count = 0;
         let tickerHandler = createjs.Ticker.addEventListener('tick', () => {
@@ -94,10 +95,14 @@ export function drawImage() {
         }
         pixelsContainer.x = stage.marginBmp > 0 ? stage.marginBmp / 2 : 0
         stage.removeChild(stage.pixelsContainer);
-        stage.removeChild(stage.bmp);
+        stage.removeChild(stage.bmpContainer);
 
         if (Number(pixelSlider.value) <= 30) {
-            stage.addChildAt(stage.bmp, 0);
+            let bmpContainer = new createjs.Container();
+            bmpContainer.addChild(stage.bmp);
+            bmpContainer.x = stage.marginBmp > 0 ? stage.marginBmp / 2 : 0
+            stage.bmpContainer = bmpContainer;
+            stage.addChildAt(bmpContainer, 0);
         } else {
             stage.addChildAt(pixelsContainer, 0);
             stage.pixelsContainer = pixelsContainer
