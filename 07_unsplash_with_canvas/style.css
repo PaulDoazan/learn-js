@@ -4,6 +4,7 @@
   --yellow: #feb300;
   --pinkLeaf: #ffaaab;
   --purple: #2f1728;
+  --blue: #d7e1ff;
 }
 
 *,
@@ -17,7 +18,7 @@
 body {
   color: var(--purple);
   min-height: 100vh;
-  background: var(--beige);
+  background: linear-gradient(to right, var(--blue), var(--beige));
   font-family: 'VT323', monospace;
 }
 
