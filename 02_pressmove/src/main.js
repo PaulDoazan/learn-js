@@ -16,16 +16,16 @@ function customCircle(size, position) {
 
     circle.vx = circle.vy = 1;
 
-    stage.on('changeLaCouleur', () => {
-        circle.graphics.beginFill("red").drawCircle(0, 0, size);
-    })
+    // stage.on('changeLaCouleur', () => {
+    //     circle.graphics.beginFill("red").drawCircle(0, 0, size);
+    // })
 
     circle.on('tick', (e) => {
         let randomNumber = Math.random();
         e.currentTarget.vy += randomNumber / 10;
         e.currentTarget.y += e.currentTarget.vy;
 
-        if (e.currentTarget.y > 500) {
+        if (e.currentTarget.y > 600) {
             e.currentTarget.parent.removeChild(e.currentTarget)
         }
     })
