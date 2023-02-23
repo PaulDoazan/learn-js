@@ -16,13 +16,10 @@
 
 body {
     font-family: 'Space Mono', monospace;
+    font-size: clamp(16px, 2.5vw, 25px);;
     background: linear-gradient(to right, var(--blue5), var(--blue4));
     min-height: 100vh;
     overflow: hidden;
-}
-
-.info {
-
 }
 
 .main-container {
@@ -30,9 +27,14 @@ body {
     text-align: right;
     width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     color: var(--blue5);
     padding: 1em;
+}
+
+.score {
+    color: var(--blue1);
+    text-align: left;
 }
 
 #demoCanvas {
