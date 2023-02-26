@@ -106,6 +106,9 @@ function lockSquare() {
 }
 
 function restart() {
+    red = 245;
+    green = 210;
+    blue = 89;
     currentRectangle = previousRectangle = null;
     rectanglesContainer.removeAllChildren();
     createFirstRectangles()
@@ -191,9 +194,9 @@ function handleCurrentRectangle(xMin, xMax, yMin, yMax) {
         lost_maxX = lost_maxX_2 = currentRectangle.x + currentRectangle.width;
     }
 
-    let lostRectangle_1 = createRectangle(lost_minX, lost_minY, lost_maxX - lost_minX, lost_maxY - lost_minY);
+    let lostRectangle_1 = createRectangle(lost_minX, lost_minY, lost_maxX - lost_minX, lost_maxY - lost_minY, `rgba(${red}, ${green}, ${blue}, 0.6)`);
     lostRectangle_1.speedAnimation = getRandomIntInclusive(5, 10) / 100;
-    let lostRectangle_2 = createRectangle(lost_minX_2, lost_minY_2, lost_maxX_2 - lost_minX_2, lost_maxY_2 - lost_minY_2);
+    let lostRectangle_2 = createRectangle(lost_minX_2, lost_minY_2, lost_maxX_2 - lost_minX_2, lost_maxY_2 - lost_minY_2, `rgba(${red}, ${green}, ${blue}, 0.6)`);
     lostRectangle_2.speedAnimation = getRandomIntInclusive(5, 10) / 100;
 
     rectanglesContainer.removeChild(currentRectangle, previousRectangle);
