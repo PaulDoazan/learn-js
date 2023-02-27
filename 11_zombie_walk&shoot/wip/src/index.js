@@ -1,5 +1,5 @@
 const colors = ['#063c77', '#f19648', '#f5d259', '#d84f35']
-let stage;
+let stage, manifest, loader, zombie_1;
 let arrKeydown = [];
 let keysAllowed = ['a', 's', 'd', 'w', 'f', 't', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Shift', 'Enter']
 let tg1, tg2;
@@ -17,6 +17,19 @@ function init() {
     createjs.Ticker.addEventListener("tick", () => {
         stage.update();
     });
+
+    manifest = [
+        { src: "man/Walk.png", id: "zombie_1_walk" },
+        { src: "man/Idle.png", id: "zombie_1_idle" },
+    ];
+
+    loader = new createjs.LoadQueue(false);
+    loader.addEventListener("complete", handleComplete);
+    loader.loadManifest(manifest, true, "../wip/assets/");
+}
+
+function handleComplete() {
+    createZombie()
 }
 
 function createTarget(x, y, color) {
@@ -51,7 +64,6 @@ function setGame() {
 }
 
 function moveFireTarget() {
-    console.log(arrKeydown);
     if (arrKeydown.length === 0) return;
     arrKeydown.forEach((key) => {
         if (key === 'ArrowUp') tg1.y -= targetSpeed
@@ -80,5 +92,23 @@ function onKeydown(e) {
     if (keysAllowed.includes(e.key) && !arrKeydown.includes(e.key)) {
         arrKeydown.push(e.key);
     }
+}
+
+function createZombie() {
+    let spriteSheet = new createjs.SpriteSheet({
+        framerate: 60,
+        "images": [loader.getResult("zombie_1_walk"), loader.getResult("zombie_1_idle")],
+        "frames": { "regX": 48, "height": 96, "count": 8, "regY": 0, "width": 96 },
+        // define two animations, run (loops, 1.5x speed) and jump (returns to run):
+        "animations": {
+            "walk": [0, 7, "walk", 0.1],
+            "idle": [0, 7, "idle", 0.1],
+        }
+    });
+    zombie_1 = new createjs.Sprite(spriteSheet, "idle");
+
+    stage.addChild(zombie_1);
+    zombie_1.x = 100
+    zombie_1.y = 100
 }
 
