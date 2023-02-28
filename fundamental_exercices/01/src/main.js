@@ -53,7 +53,8 @@ let cities = [
     }
 ]
 
-// Logger la somme des populations de Paris et Dublin !
+// Logger la moyenne de population de toutes les villes
+// moyenne = TOTAL / nombreDeVilles
 
 export default function main(stage) {
     let total = 0;
@@ -62,5 +63,26 @@ export default function main(stage) {
         total += city.population;
     }
 
-    console.log(total);
+    let moyenne = Math.round(total / cities.length);
+    //Logger tous les noms de ville dont la population est au-dessus de la moyenne
+
+    let bigCities = [];
+
+    for (let j = 0; j < cities.length; j++) {
+        if (cities[j].population > moyenne) {
+            bigCities.push(cities[j])
+        }
+    }
+    console.log(bigCities);
+
+    //Logger un tableau des villes dont la superficie est inférieure à la moye 
+
+    // let smallestCity = cities[0];
+    // for (let n = 1; n < cities.length; n++) {
+    //     let valeurCourantedeCities = cities[n]
+    //     if (valeurCourantedeCities.population < smallestCity.population) {
+    //         smallestCity = valeurCourantedeCities;
+    //     }
+    // }
+    // console.log(smallestCity.name);
 }
