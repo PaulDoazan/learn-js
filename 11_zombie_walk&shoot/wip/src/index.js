@@ -1,5 +1,5 @@
 const colors = ['#063c77', '#f19648', '#f5d259', '#d84f35']
-let stage, manifest, loader, zombie_1;
+let stage, manifest, loader;
 let arrKeydown = [];
 let keysAllowed = ['a', 's', 'd', 'w', 'f', 't', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Shift', 'Enter']
 let tg1, tg2;
@@ -21,6 +21,7 @@ function init() {
     manifest = [
         { src: "man/Walk.png", id: "zombie_1_walk" },
         { src: "man/Idle.png", id: "zombie_1_idle" },
+        { src: "man/Dead.png", id: "zombie_1_dead" },
     ];
 
     loader = new createjs.LoadQueue(false);
@@ -95,20 +96,45 @@ function onKeydown(e) {
 }
 
 function createZombie() {
-    let spriteSheet = new createjs.SpriteSheet({
+    let container = new createjs.Container();
+    let spriteSheet1 = new createjs.SpriteSheet({
         framerate: 60,
-        "images": [loader.getResult("zombie_1_walk"), loader.getResult("zombie_1_idle")],
+        "images": [loader.getResult("zombie_1_walk")],
         "frames": { "regX": 48, "height": 96, "count": 8, "regY": 0, "width": 96 },
-        // define two animations, run (loops, 1.5x speed) and jump (returns to run):
         "animations": {
             "walk": [0, 7, "walk", 0.1],
+        }
+    });
+
+    let spriteSheet2 = new createjs.SpriteSheet({
+        framerate: 60,
+        "images": [loader.getResult("zombie_1_idle")],
+        "frames": { "regX": 48, "height": 96, "count": 8, "regY": 0, "width": 96 },
+        "animations": {
             "idle": [0, 7, "idle", 0.1],
         }
     });
-    zombie_1 = new createjs.Sprite(spriteSheet, "idle");
 
-    stage.addChild(zombie_1);
-    zombie_1.x = 100
-    zombie_1.y = 100
+    let spriteSheet3 = new createjs.SpriteSheet({
+        framerate: 60,
+        "images": [loader.getResult("zombie_1_dead")],
+        "frames": { "regX": 0, "height": 96, "count": 5, "regY": 0, "width": 96 },
+        "animations": {
+            "die": [0, 4, "dead", 0.1],
+            "dead": [4],
+        }
+    });
+    let walk = new createjs.Sprite(spriteSheet1, "walk");
+    let idle = new createjs.Sprite(spriteSheet2, "idle");
+    let die = new createjs.Sprite(spriteSheet3, "die");
+
+    walk.visible = false;
+    die.visible = false;
+
+    container.addChild(walk, idle, die)
+    container.animations = [walk, idle, die];
+    stage.addChild(container);
+    container.x = 100
+    container.y = 100
 }
 
