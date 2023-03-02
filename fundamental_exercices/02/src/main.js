@@ -95,7 +95,9 @@ function tableauTotal(tab1, tab2) {
     }
 
     for (let i = 0; i < tab2.length; i++) {
-        totalArray.push(tab2[i])
+        if (!totalArray.includes(tab2[i])) {
+            totalArray.push(tab2[i])
+        }
     }
 
     return totalArray;
