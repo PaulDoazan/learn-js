@@ -128,8 +128,12 @@ function createZombie() {
     let idle = new createjs.Sprite(spriteSheet2, "idle");
     let die = new createjs.Sprite(spriteSheet3, "die");
 
-    walk.visible = false;
-    die.visible = false;
+    walk.x = 200;
+    walk.y = 200;
+    // walk.visible = false;
+    // die.visible = false;
+    die.x = 300;
+    die.y = 300;
 
     container.addChild(walk, idle, die)
     container.animations = [walk, idle, die];
