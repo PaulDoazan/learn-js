@@ -1,0 +1,81 @@
+[
+    {
+        "title": "The last of us part II",
+        "year": 2020,
+        "devices": [
+            "playstation 4",
+            "playstation 5"
+        ],
+        "rate": 8.3
+    },
+    {
+        "title": "Final Fantasy 7 remake",
+        "year": 2020,
+        "devices": [
+            "playstation 4",
+            "playstation 5",
+            "PC"
+        ],
+        "rate": 7.6
+    },
+    {
+        "title": "Doom Eternal",
+        "year": 2020,
+        "devices": [
+            "playstation 4",
+            "playstation 5",
+            "PC",
+            "Xbox One",
+            "Nintendo Switch",
+            "XBox Series X/S"
+        ],
+        "rate": 8.1
+    },
+    {
+        "title": "Cyberpunk 2077",
+        "year": 2020,
+        "devices": [
+            "playstation 4",
+            "playstation 5",
+            "PC",
+            "Xbox One",
+            "XBox Series X/S"
+        ],
+        "rate": 7.1
+    },
+    {
+        "title": "It takes two",
+        "year": 2021,
+        "devices": [
+            "playstation 4",
+            "playstation 5",
+            "PC",
+            "Xbox One",
+            "Nintendo Switch",
+            "XBox Series X/S"
+        ],
+        "rate": 8.2
+    },
+    {
+        "title": "Metroid Dread",
+        "year": 2021,
+        "devices": [
+            "Nintendo Switch"
+        ],
+        "rate": 7.8
+    },
+    {
+        "title": "Resident Evil: Village",
+        "year": 2021,
+        "devices": [
+            "playstation 4",
+            "playstation 5",
+            "PC",
+            "Xbox One",
+            "Nintendo Switch",
+            "XBox Series X/S",
+            "Mac"
+        ],
+        "rate": 7.2
+    }
+]
