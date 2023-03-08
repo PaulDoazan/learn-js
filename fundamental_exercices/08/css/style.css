@@ -1,0 +1,25 @@
+:root {
+    --color1 : #e0ffcd;
+    --color2 : #fdffcd;
+    --color3 : #ffebbb;
+    --color4 : #ffcab0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    min-height: 100vh;
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
