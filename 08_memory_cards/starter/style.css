@@ -19,3 +19,92 @@ body {
   background: linear-gradient(to right, var(--sage), var(--orange));
   padding: clamp(20px, 5vw, 50px) 20px 10px;
 }
+
+img {
+  width: 30px;
+}
+
+h1, .score, .advice {
+  text-align: center;
+  color: var(--green);
+}
+
+h1 {
+  font-size: clamp(25px, 7vw, 70px);
+  font-weight: 300;
+}
+
+h1 span {
+  font-weight: 800;
+}
+
+.hat {
+  z-index: -1;
+}
+
+.advice {
+  font-size: clamp(16px, 2.5vw, 25px);
+  margin-top: 10px;
+}
+
+.score {
+  font-size: clamp(16px, 2.5vw, 20px);
+  margin-top: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 800px;
+  gap: 10px;
+  margin: 30px auto 0;
+}
+
+.card {
+  aspect-ratio: 1 / 1;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  perspective: 1000px;
+  align-items: center;
+}
+
+.double-face {
+  pointer-events: none;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 2s;
+}
+
+.active {
+  transform: rotateY(180deg);
+}
+
+.hat {
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--beige);
+}
+
+.question {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background-color: var(--beige);
+}

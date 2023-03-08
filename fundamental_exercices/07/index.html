@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cours javascript</title> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <!-- <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script> -->
+    <script type="module" src="src/index.js"></script>
+</head>
+<body>
+    <h1>Interagir avec le DOM</h1>
+    <div class="grid">
+        <div class="exo">
+            <div class="btn-container-1">
+                <button class="btn btn-1">red</button>
+                <button class="btn btn-1">green</button>
+                <button class="btn btn-1">blue</button>
+            </div>
+            <div class="div-to-color-1 colored"></div>
+        </div>
+        <div class="exo">
+            <form class="form-2">
+                <input type="text" class="input-2">
+                <button class="btn">Ok</button>
+            </form>
+            <div class="text-to-display-2">Texte à afficher</div>
+        </div>
+        <div class="exo">
+            <input type="range" min="10" max="50" value=40 class="input-4">
+            <div class="text-to-display-4">40</div>
+        </div>
+        <div class="exo">
+            <input type="text" class="input-3">
+            <div class="text-to-display-3">Texte à afficher</div>
+        </div>
+        <div class="exo">
+            <input type="range" min="5" max="95" value=30 class="input-5">
+            <div class="text-to-display-5">30</div>
+        </div>
+        <div class="exo">
+            <label>
+                Programming language :
+                <select class="select-6" name="language">
+                  <option value="">Select One …</option>
+                  <option value="JS">JS</option>
+                  <option value="Python">Python</option>
+                  <option value="Php">Php</option>
+                </select>
+              </label>
+              
+              <div class="text-to-display-6"> ... </div>
+        </div>
+        <div class="exo">
+            <input type="color" class="input-7">
+            <div class="div-to-color-7 colored"></div>
+        </div>
+        <div class="exo">
+            <div class="btn-container-8">
+                <button class="btn btn-8" data-color="magenta">Salut</button>
+                <button class="btn btn-8" data-color="purple">tout</button>
+                <button class="btn btn-8" data-color="orange">le monde</button>
+            </div>
+            <div class="div-to-color-8 colored"></div>
+        </div>
+        <div class="exo">
+                <legend>Mes intérêts : </legend>
+                <div>
+                  <input class="checkbox" type="checkbox" id="coding" name="interest" value="coding">
+                  <label for="coding">Dev</label>
+                </div>
+                <div>
+                  <input class="checkbox" type="checkbox" id="music" name="interest" value="music">
+                  <label for="music">Music</label>
+                </div>
+                <div class="text-to-display-9"> ... </div>
+        </div>
+    </div>
+</body>
+</html>
