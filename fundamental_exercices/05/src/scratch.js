@@ -1,16 +1,16 @@
-let myColors = ["red", "green", "white"];
+let myAge = 34;
+let myName = 'Paul'
+let part1 = "Je m'appelle"
+let part2 = "et j'ai"
+let part3 = "ans."
+// let maChaineDeCaractere = part1 + ' ' + myName + ' ' + part2 + ' ' + myAge + ' ' + part3;
+let maChaineDeCaractere = `${part1} ${myName}, ${part2} ${myAge} ${part3}`;
 
-let countries = [
-    {
-        name: 'USA',
-        population: 300000000,
-        languages: ['english', 'spanish']
-    },
-    {
-        name: 'France',
-        population: 70000000,
-        languages: ['français', 'breton', 'basque', 'alsacien']
-    }
-]
+let arr = [2, 3, 4, 5]
+let total = 12;
 
-console.log(countries[1].languages[2]) // basque
+arr.forEach((elementCourant) => {
+    total += elementCourant
+})
+
+console.log(total);
