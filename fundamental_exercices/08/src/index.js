@@ -1,11 +1,6 @@
-import { getMyParent, getMyAge } from "./utils.js";
-import principale from "./main.js";
-import { maVariable, mySurname as nomDeFamille } from "./data.js";
+import { getMyAge, getMyName } from './utils.js'
+import { getMyName as getItToMe } from './main.js'
+import { retourneUnNombreFoisDeux as foisDeux } from './main.js';
 
-let myFather = getMyParent(true);
-console.log(myFather);
-
-principale();
-
-console.log(maVariable);
-console.log(nomDeFamille);
+let myName = getMyName();
+console.log(myName)
