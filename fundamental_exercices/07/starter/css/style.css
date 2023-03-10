@@ -38,3 +38,20 @@ h1 {
     align-items: center;
     padding: 20px;
 }
+
+.btn {
+    padding: 10px;
+    margin: 5px;
+}
+
+.result {
+    margin-left: 20px;
+}
+
+.result-1, .result-7, .result-8 {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50px;
+}
+
